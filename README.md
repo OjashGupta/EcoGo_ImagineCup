@@ -11,7 +11,7 @@
   - [Solution architecture](#solution-architecture)
 - [Presentation materials](#presentation-materials)
   - [Demo Video](#demo-video)
-  - [Design Documentation](#design-documentation)
+  - [Business Proposal](#business-proposal)
   - [Project Development](#project-development)
 - [The Set-Up](#the-set-up)
   - [How to run the project](#how-to-run-the-project)
