@@ -119,6 +119,7 @@ class LoadingScreenState extends State<LoadingScreen>
     if (await documentExistsInCollection(
             category, widget.prod_name.toLowerCase()) ==
         false) {
+      print("SUB${widget.subcategory}");
       mp = (await ApiService()
           .getRating(widget.prod_name, widget.ingredients, widget.subcategory,
               Category)
@@ -185,6 +186,7 @@ class LoadingScreenState extends State<LoadingScreen>
       category1 = 'food_sub';
     }
     int count = 0;
+    print(mp);
     int docId = int.parse(mp['sub_category']); //has to be the subcategory
     setState(() {
       simProducts = [];

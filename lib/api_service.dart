@@ -47,14 +47,10 @@ class ApiService {
   }
 
   Future<Map> getRating(name, ingredients, subcategory, category) async {
-    var url = Uri.parse(ApiConstants.baseUrl + ApiConstants.fetchendpoint);
+    var url = Uri.parse(
+        "${ApiConstants.baseUrl}${ApiConstants.fetchendpoint}?product_name=$name&ingredients=$ingredients&sub_category=$subcategory&category=$category");
     try {
-      var response = await http.post(url, body: {
-        'product_name': name,
-        'ingredients': ingredients,
-        'sub_category': subcategory,
-        'category': category,
-      });
+      var response = await http.post(url);
       if (200 == response.statusCode) {
         data = json.decode(response.body);
         return data;
