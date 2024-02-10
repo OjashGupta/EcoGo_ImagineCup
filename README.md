@@ -2,6 +2,8 @@
 
 # EcoGo
 
+### [APK LINK](https://drive.google.com/file/d/1AYWr1OVKkSnLjpP0ZNV3sZgs6ZBX_sXM/view?usp=sharing)
+
 - [Project summary](#project-summary)
   - [The issue we are hoping to solve](#the-issue-we-are-hoping-to-solve)
   - [How our technology solution can help](#how-our-technology-solution-can-help)
@@ -55,7 +57,7 @@ Diagram and step-by-step description of the flow of our solution:
 ![Architecture](https://github.com/OjashGupta/EcoGo_ImagineCup/blob/main/assets/architecture_diagram.JPG)
 
 1. The user can download the app to their phone to choose the product category and query any product through a quick barcode scan or a textual search to know its ecological impact.
-2. The app connects to the cloud and performs an API call to fetch the entered product, it then performs a database query to search for the product. If product details are not found in Firebase, an API call to the trained model deployed on Azure Function is made and the results are stored in Firestore Database.
+2. The app connects to Azure and performs an API call to fetch the entered product, it then performs a database query to search for the product. If product details are not found in Firebase, an API call to the trained model deployed on Azure Function is made and the results are stored in Firestore Database.
 3. Once the results are fetched, the user will be directed to the analysis screen that will display the overall, aquatic, and environmental impact of the product.
 4. The user can browse through the individual tabs to learn more about the impact of each of the ingredients.
 5. The user can also browse through alternatives for the searched product in the Similar Products tab and thereby, may choose to buy a product that has a lesser impact on the environment.
@@ -112,7 +114,7 @@ $ flutter run
 
 ### Live demo
 
-You can find a running system to test at [APK FILE (Android Ver.)](https://drive.google.com/file/d/1qyNVM6NUdIJMio3AeWe3-Zhfpqf9n5y5/view?usp=sharing). Download the file in your phone to install the app.
+You can find a running system to test at [APK FILE (Android Ver.)](https://drive.google.com/file/d/1AYWr1OVKkSnLjpP0ZNV3sZgs6ZBX_sXM/view?usp=sharing). Download the file in your phone to install the app.
 
 You can also watch our [Demo Video](https://youtu.be/KayB0PPTCZg) for a detailed walkthrough of our app.
 
